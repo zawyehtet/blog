@@ -34,9 +34,13 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
+                            @auth
                             <a href="{{url("/articles/add")}}" class="nav-link text-success">
                                 +Add Article
                             </a>
+                            @endauth
+
+                            {{-- auth for add article --}}
                         </li>
                     </ul>
 

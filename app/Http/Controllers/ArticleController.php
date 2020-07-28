@@ -1,11 +1,18 @@
 <?php
 namespace App\Http\Controllers;
 use App\Article;
+use App\User;
 use Illuminate\Http\Request;
 
 class ArticleController extends Controller
 {
     //
+
+
+    public function __construct(){
+        $this->middleware('auth')->except(['index','detail']);
+    }
+    // auth middleware
 
     public function index(){
 

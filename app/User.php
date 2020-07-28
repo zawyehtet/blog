@@ -1,6 +1,8 @@
 <?php
 
 namespace App;
+use App\Category;
+use App\Comment;
 
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
